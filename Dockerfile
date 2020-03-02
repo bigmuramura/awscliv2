@@ -1,6 +1,6 @@
 FROM amazonlinux:2
 
-RUN yum install -y python3 curl jq git zsh
+RUN yum install -y python3 curl jq git zsh nc iputils
 
 RUN python3 -m pip install git+https://github.com/boto/botocore.git@v2
 RUN python3 -m pip install git+https://github.com/aws/aws-cli.git@v2
